@@ -1,13 +1,140 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-us">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <title>Crystal Collector</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css"
+  />
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
+
 <body>
-    
+
+  <div class="container">
+
+    <!-- Jumbotron -->
+    <div class="jumbotron" style="background-color: navy; color: white;">
+      <div class="container">
+        <h1 class="text-center">
+          <strong>Crystal Collector</strong>
+        </h1>
+      </div>
+    </div>
+
+
+    <!-- Game Instructions -->
+    <div class="row">
+
+      <!-- Game Instructions Container -->
+      <div class="col-md-12">
+        <div class="card mb-4">
+          <div class="card-header">
+            Instructions
+          </div>
+          <div class="card-body">
+            <p>
+              <small>
+                You will be given a random number at the start of the game.
+                Click on the crystals below to add points to your total.
+                Match the target number to win. Going above the target number is a loss.
+                The value of the crystals changes every round.
+                Use your math skills to determine the value of the crystals.
+                Good luck!
+           </small>
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Scores and Crystals  -->
+    <div class="row">
+
+      <!-- Target Score -->
+      <div class="col-md-3">
+        <div class="card mb-4">
+          <div class="card-header">
+            Target Score
+          </div>
+          <div class="card-body">
+            <h3 class="text-center" id="target-score"></h3>
+          </div>
+        </div>
+      </div>
+
+      <!-- Your Score -->
+      <div class="col-md-3">
+
+        <div class="card mb-4">
+          <div class="card-header">
+            Your Score
+          </div>
+          <div class="card-body">
+            <h3 class="text-center" id="your-score"></h3>
+          </div>
+        </div>
+      </div>
+
+      <!-- Crystals -->
+      <div class="col-md-6">
+
+        <div class="card mb-4">
+          <div class="card-header">
+            Crystal Selection
+          </div>
+          <div class="card-body text-center">
+            <img src="assets/images/sapphire1.png" id="blue">
+            <img src="assets/images/emerald1.png" id="green">
+            <img src="assets/images/Ruby1.png" id="red">
+            <img src="assets/images/Yellow1.png" id="yellow">
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!-- Counters Row -->
+    <div class="row">
+
+      <!-- Win Count -->
+      <div class="col-md-6">
+        <div class="card mb-4">
+          <div class="card-header">
+            Win Count
+          </div>
+          <div class="card-body">
+            <h3 class="text-center" id="win-count">0</h3>
+          </div>
+        </div>
+      </div>
+
+      <!-- Loss Count -->
+      <div class="col-md-6">
+
+        <div class="card mb-4">
+          <div class="card-header">
+            Loss Count
+          </div>
+          <div class="card-body">
+            <h3 class="text-center" id="loss-count">0</h3>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- JQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <!-- JS Logic  -->
+  <script src="assets/javascript/game.js"></script>
 </body>
+
 </html>
